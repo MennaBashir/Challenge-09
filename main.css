@@ -1,0 +1,249 @@
+/* Global rules */
+:root{
+ --color1:#f763c5;
+ --color2:#04242c;
+ --color4:#2f4049;
+ --color5:#f6fbff;
+ --active:#ff8ed6;
+ --color3:#d2d3d5;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+ padding: 0;
+ margin: 0;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+/* small screen */
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/* Medium screen */
+@media (min-width:992px){
+    .container{
+        width:970px;
+    }
+}
+/* Large screen */
+@media (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+img{
+    max-width: 100%;
+}
+/* End Global rules */
+/* Start Main */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-bottom: 120px;
+}
+header button{
+    cursor: pointer;
+    padding: 4px 20px;
+    margin: 2px;
+    background-color: white;
+    border: 2px solid var(--color1);
+    color: var(--color1);
+    border-radius: 12px;
+}
+main .sec1 h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 29px;
+    color: var(--color2);
+}
+main .sec1 p{
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    font-size: 14px;
+    color: #2f4049d4;
+}
+main .sec1 button,
+.box button{
+    display: block;
+    padding: 20px 66px;
+    border: none;
+    border-radius: 22px;
+    background-color: var(--color1);
+    color: white;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px #28262657;
+}
+main .sec1 button:hover,
+.box button:hover,
+footer form input[type="submit"]:hover
+    {
+    background-color: var(--active);
+}
+main .sec2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+main .sec2 .min img{
+    width: 35px;
+}
+main .sec2 .min h1,
+.box h1{
+    font-size: 45px;
+    color: var(--color2);
+}
+.box h1{
+    text-align: center;
+    margin-bottom: -20px;
+}
+.box{
+    margin-bottom: 100px;
+}
+main .sec2 .min p{
+    font-size: 14px;
+    color: #939395;
+    padding-top: 8px;
+    text-align: center;
+}
+/* End Main */
+/* Start sec1 */
+.topic1 .min1{
+    background-color: var(--color5);
+    margin-top: -5px;
+}
+.topic1 .min{
+    display: flex;
+    justify-content: space-between;
+}
+.topic1 .min .txt{
+    max-width: 360px;
+    margin: auto;
+}
+.topic1 .img img{
+    max-width: 450px
+}
+.topic1 .min .txt h1{
+    font-size: 35px;
+    color: var(--color2);
+    margin-bottom: 20px;
+}
+.topic1 .min .txt p{
+    font-size: 14px;
+    color: #04242cbf;
+    line-height: 18px;
+}
+.topic1 .a1{
+    margin-top: 80px
+}
+.topic1 .a11{
+    margin-bottom: 80px
+}
+@media (max-width:576px){
+    .topic1 .img img {
+        max-width: 100%;
+        padding-top: 35px;
+    }
+    .topic1 .min {
+        display: block;
+    }
+}
+/* End sec1 */
+/* Start Footer */
+.mine{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+footer .fin{
+    background-color: var(--color2);
+    margin-top: -5px;
+    padding-left: 90px;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer .box1,
+footer .box2{
+    flex: 1;
+}
+footer svg + p{
+    width: 282px;
+    margin-top: 14px;
+    color: #a4a4a5;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+footer .com{
+    color: var(--color3);
+    margin-bottom: 10px;
+} 
+footer .com img{
+    margin-right: 10px;
+}
+footer .img img{
+    width: 22px;
+    margin-right: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+footer .box2 p{
+    margin-top: 12px;
+    color: var(--color3);
+    font-size: 15px;
+    width: 330px;
+    margin-bottom: 40px;
+}
+footer .name{
+    color: var(--color3);
+    padding: 20px;
+    margin: auto;
+}
+footer form input[type="email"]{
+    border: none;
+    padding: 12px 40px;
+    outline: none;
+    border-radius: 3px;
+}
+footer form input[type="submit"]{
+    margin-left: 26px;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    background-color: var(--color1);
+}
+@media (max-width:768px){
+    .mine {
+        display: block;
+        overflow: hidden;
+    }
+    footer .fin{
+        padding-left: 20px;
+    }
+    footer form input[type="submit"]{
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+/* End Footer */
